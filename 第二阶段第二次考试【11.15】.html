@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		
+		
+	<script type="text/javascript">
+		//【1】
+		/*var i = 10;   //全局变量
+         
+      setTimeout(function(){  //局部变量  
+
+         i--;  
+
+i = i *2;  
+
+      },30000)  
+
+      document.write(i); //打印全局变量 i 10；*/
+      
+		//【2】
+		/*function Foo(){};
+        var foo = new Foo();
+		
+	console.log(foo.__proto__ == Foo.prototype);	*/
+/*(Foo.prototype == Foo.__proto__
+		 
+		
+		 foo.__proto__ == Foo.prototype
+		
+		 foo.__proto__ == Foo.__proto__*/
+		
+		//【3】
+		/*function fun1(x) {
+            if(x>2){
+                return (fun1(x-1)+fun1(x-2));
+            }else{
+                return 1;
+            }
+        }
+        console.log(fun1(10));
+		*/
+		//【4】
+/*var name = 10;
+    var obj = {}
+  console.log(name + 10 + obj );*/
+ 
+ //【5】
+/* forEach=function (arr,fn) {
+    for(var i=0,l=arr.length;i<l;i++){
+        var c=arr[i];
+        if(fn.call(c,i,c)===false){
+            return false;
+        }
+    }
+};
+function box1(index,num) {
+    console.log(index,num);
+}
+var arr=[10,9,8,7,6,5,4];
+forEach(arr,box1)*/
+		
+	</script>
+	
+	</body>
+</html>

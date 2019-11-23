@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				position: relative;
+				width: 500px;
+				height: 500px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+		<script type="text/javascript">
+			
+						//万能测ASCII码和字符集；【与键盘事件有关】
+						
+			document.onkeydown = function(e){//这里onkeydown只能和documnet连用；即document.onkeydown；
+				var evt = e || event;//事件对象：【MouseEvent】当事件处理函数执行时，隐藏在处理函数中的一个参数；这个参数是第一个形参；获取对象信息非常强大；
+				//console.log(evt.ctrlKey,evt.shiftKey,evt.altKey); //altKey【alt】属性，bool类型，表示发生事件的时候alt键是否被按下
+				                                                 //ctrlKey【ctrl】属性，bool类型，表示发生事件的时候ctrl键是否被按下
+				                                                 //shiftKey【shift】属性，bool类型，表示发生事件的时候shift键是否被按下 
+                                                                 //所谓bool类型就是判断true或false
+				console.log(evt.keyCode);//enter键=13；通过这种方法能测任何功能键，比如ctrl=13；F12=123；字母大小写，数字，符号，
+				                                                        //都可以测出其对应的ASCII码和字符集;
+
+				//console.log(evt.which);//这是测ASCII码和字符集 第二种方法；
+				var code = evt.keyCode || evt.which;//兼容性写法：非常绝妙
+			}
+		</script>
+	</body>
+</html>

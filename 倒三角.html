@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			
+			.box{/*mn-input 是小div*/
+				position: relative;
+				width: 300px;
+				height: 40px;
+				border: 1px solid #CECECE;
+			}
+			
+			
+			
+			.box100 span{/*大div【mn-select】里的span &&将span【倒三角修饰】定位到 小div【mn-input】里  */
+				position: absolute;
+				border-width: 15px;
+				border-style: solid;
+	
+				border-color: black transparent  transparent ;/*倒三角*/
+				top: 15px;
+				right: 20px;
+				cursor: pointer;/*cursor：pointer意思是是计算机中把鼠标指针的形状弄成一只伸出食指的手，鼠标碰到倒三角成手型*/
+			}
+			
+			
+	/*当：border-color: black  transparent transparent;去掉一个transprent变成上下对顶角即：【border-color: black  transparent；】*/
+	/*border-color: transparent transparent black; 成正三角*/
+	/*border-color: transparent black transparent transparent; 成左三角*/
+	/*border-color:transparent  transparent  transparent black ;/*成右三角*/
+	
+	
+			/*.box100 span*/{/*大div【mn-select】里的span &&将span【倒三角修饰】定位到 小div【mn-input】里    大的注释放在后边 否则会出事*/
+				/*position: absolute;
+				border-width: 10px;
+				border-style: solid;
+				border-color: black  transparent transparent;
+				top: 15px;
+				right: 20px;
+				cursor: pointer;
+			}*/
+			
+		</style>
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		<div class="box100">
+		<div class="box">
+			
+			<span></span>
+			
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
